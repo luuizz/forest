@@ -6,9 +6,13 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        default: "0.5rem",
+        DEFAULT: "0.5rem",
         sm: "1rem",
       },
+    },
+    fontFamily: {
+      sans: ["DM Sans", "system-ui", "sans-serif"],
+      serif: ["DM Serif Text", "Georgia", "sans-serif"],
     },
     extend: {
       keyframes: {

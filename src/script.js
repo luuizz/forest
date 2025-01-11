@@ -2,6 +2,10 @@ const video = document.getElementById("video");
 const temperatura = document.getElementById("temperatura");
 const tempo = document.getElementById("tempo");
 const dia = document.getElementById("dia");
+const anoAtual = document.querySelector(".current-year");
+if (anoAtual) {
+  anoAtual.innerHTML = new Date().getFullYear();
+}
 
 const random = Math.floor(Math.random() * 10) + 20;
 temperatura.innerText = `${random}°`;
