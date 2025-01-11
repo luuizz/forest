@@ -26,22 +26,33 @@
       <img src="./img/forest.svg" alt="Logo do Forest" />
     </a>
 
-    <nav class="">
-      <ul class="text-white text-xl flex flex-wrap gap-8">
-        <li>
-          <a class="hover:underline hover:underline-offset-8" href="#acomodacoes">Acomodações</a>
+    <nav id="mobile-menu" class="lg:block hidden items-center z-40 max-lg:fixed max-lg:w-full max-lg:inset-0">
+
+      <div class="fixed lg:hidden inset-0 bg-verde-950/40 backdrop:blur-md"></div>
+
+      <ul class="text-white max-lg:z-50 max-lg:absolute max-lg:w-full max-lg:p-8 lg:text-xl max-lg:divide-y-2 max-lg:divide-white/10 lg:flex lg:flex-wrap lg:gap-8 text-2xl">
+        <li class="animate-slide-in opacity-0 animate-1">
+          <a class="lg:hover:underline lg:px-0 lg:py-2 max-lg:hover:bg-white/10 lg:hover:underline-offset-8 p-4 block" href="#acomodacoes">Acomodações</a>
         </li>
-        <li>
-          <a class="hover:underline hover:underline-offset-8" href="#experiencias">Experiências</a>
+        <li class="animate-slide-in opacity-0 animate-2">
+          <a class="lg:hover:underline lg:px-0 lg:py-2 max-lg:hover:bg-white/10 lg:hover:underline-offset-8 p-4 block" href="#experiencias">Experiências</a>
         </li>
-        <li>
-          <a class="hover:underline hover:underline-offset-8" href="#eventos">Eventos</a>
+        <li class="animate-slide-in opacity-0 animate-3">
+          <a class="hlg:hover:underline lg:px-0 lg:py-2 max-lg:hover:bg-white/10 lg:hover:underline-offset-8 p-4 block" href="#eventos">Eventos</a>
         </li>
-        <li>
-          <a class="hover:underline hover:underline-offset-8" href="#contato">Contato</a>
+        <li class="animate-slide-in opacity-0 animate-4">
+          <a class="lg:hover:underline lg:px-0 lg:py-2 max-lg:hover:bg-white/10 lg:hover:underline-offset-8 p-4 block" href="#contato">Contato</a>
         </li>
       </ul>
     </nav>
+
+    <button id="mobile-button" class="bg-verde-400 text-verde-900 py-2 px-4 inline-flex items-center gap-3 rounded-full lg:hidden">Menu
+      <span class="h-3 w-4 flex flex-col *:h-0.5 *:rounded-md *:bg-verde-800 justify-between">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
   </header>
 
   <main class="container">
@@ -327,6 +338,8 @@
       </ul>
     </div>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
