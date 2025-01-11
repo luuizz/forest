@@ -45,7 +45,7 @@
   </header>
 
   <main class="container">
-    <div class="text-white relative bg-gradient-to-t from-verde-950/80  max-sm:pt-12 pt-64 max-sm:px-4 px-8 pb-8 rounded-2xl overflow-hidden">
+    <section class="text-white relative bg-gradient-to-t from-verde-950/80  max-sm:pt-12 pt-64 max-sm:px-4 px-8 pb-8 rounded-2xl overflow-hidden">
       <img class="absolute inset-0 -z-10 size-full object-cover" src="./img/floresta.jpg" alt="Imagem de uma floresta">
       <div class="bg-verde-950/60 flex items-start sm:flex-row flex-col gap-2 p-4 sm:bg-verde-950 rounded-xl sm:inline-flex sm:items-center sm:py-1 sm:pr-1 sm:rounded-full pl-4 sm:gap-8 mb-8">
         <span class="">vagas para dezembro abertas</span>
@@ -64,9 +64,49 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
   </main>
+  <!-- Acomodações -->
+  <section id="acomodacoes" class="container mb-12 sm:mb-16 pt-16 grid gap-8 lg:grid-cols-[2fr_3fr]">
+    <div class="bg-[url('./img/padrao.svg')] bg-no-repeat bg-contain bg-left-bottom content-end">
+      <h2 class="text-white mb-8 text-4xl font-serif lg:text-5xl">Refúgio natural</h2>
+      <ul class="text-gray-200 *:flex *:items-center *:gap-4 grid gap-4 sm:text-xl">
+        <li>
+          <span class="w-6 h-0.5 bg-verde-400 inline-block"></span>Experimente a naturza de perto
+        </li>
+        <li>
+          <span class="w-6 h-0.5 bg-verde-400 inline-block"></span>Conecte-se com a natureza
+        </li>
+        <li>
+          <span class="w-6 h-0.5 bg-verde-400 inline-block"></span>Desconecte-se do digital
+        </li>
+        <li>
+          <span class="w-6 h-0.5 bg-verde-400 inline-block"></span>Observe a vida selvagem
+        </li>
+        <li>
+          <span class="w-6 h-0.5 bg-verde-400 inline-block"></span>Escolha a sua cabine preferida
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
+      <div class="col-span-full grid *:col-start-1 *:row-start-1">
+        <img class="h-52 object-cover w-full rounded-xl" src="./img/casa1.jpg" alt="Casa 1">
+        <span class="uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none self-start  justify-self-end m-2">Ruby</span>
+      </div>
+
+      <div class="grid *:col-start-1 *:row-start-1">
+        <img class="object-cover size-full rounded-xl" src="./img/casa2.jpg" alt="Casa 2">
+        <span class="uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none self-start  justify-self-end m-2">Emerald</span>
+      </div>
+
+      <div class="grid *:col-start-1 *:row-start-1">
+        <img class="object-cover size-full rounded-xl" src="./img/casa3.jpg" alt="Casa 3">
+        <span class="uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none self-start  justify-self-end m-2">Safari</span>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
